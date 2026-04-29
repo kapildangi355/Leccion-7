@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spanish Grammar Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo"><span>Español  </span></div>
+    <div class="nav-links">
+      <a href="#vocab">Vocabulario</a>
+      <a href="#future">Futuro</a>
+      <a href="#future-perfect">Futuro Perfecto</a>
+      <a href="#past-subj">Pasado Subj.</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Master Spanish<br/><em>Lección 7: El mundo del trabajo</em></h1>
+    <p>By Kapil, Sreedeep, Akhil, Anya</p>
+    <a href="#vocab" class="hero-btn">Start Learning →</a>
+  </header>
+
+  <!-- ===== SECTION 1: VOCABULARY FLASHCARDS ===== -->
+  <section id="vocab" class="section">
+    <div class="section-header">
+      <span class="section-tag" style="background:#FFF3CD;color:#856404">Vocabulario</span>
+      <h2>Profesiones & Trabajo</h2>
+      <p>Click a card to reveal its meaning. Use the arrows to navigate.</p>
+    </div>
+
+    <div class="flashcard-carousel">
+      <button class="fc-arrow" id="fc-prev">&#8592;</button>
+      <div class="flashcard-wrapper">
+        <div class="flashcard" id="flashcard">
+          <div class="fc-front">
+            <span class="fc-emoji" id="fc-emoji"></span>
+            <div class="fc-word" id="fc-word">el abogado</div>
+            <div class="fc-hint">Click to reveal</div>
+          </div>
+          <div class="fc-back">
+            <div class="fc-translation" id="fc-translation">lawyer</div>
+            <div class="fc-example" id="fc-example">Mi abogado trabaja en una empresa grande.</div>
+          </div>
+        </div>
+      </div>
+      <button class="fc-arrow" id="fc-next">&#8594;</button>
+    </div>
+    <div class="fc-progress">
+      <span id="fc-counter">1 / 40</span>
+      <div class="fc-dots" id="fc-dots"></div>
+    </div>
+
+    <!-- Vocab MCQ -->
+    <div class="quiz-block" id="vocab-quiz">
+      <h3>Vocabulario Quiz</h3>
+      <div id="vocab-q-container"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: FUTURE TENSE ===== -->
+  <section id="future" class="section alt-bg">
+    <div class="section-header">
+      <span class="section-tag" style="background:#D1ECF1;color:#0C5460">Gramática</span>
+      <h2>El Futuro Simple</h2>
+      <p>Used to express what <strong>will happen</strong>. Add endings to the full infinitive.</p>
+    </div>
+
+    <div class="grammar-grid">
+      <div class="grammar-card">
+        <h4>Formation</h4>
+        <p>Take the <strong>infinitive</strong> and add:</p>
+        <div class="conj-table">
+          <div class="conj-row header"><span>Person</span><span>Ending</span></div>
+          <div class="conj-row"><span>yo</span><span>-é</span></div>
+          <div class="conj-row"><span>tú</span><span>-ás</span></div>
+          <div class="conj-row"><span>él/ella</span><span>-á</span></div>
+          <div class="conj-row"><span>nosotros</span><span>-emos</span></div>
+          <div class="conj-row"><span>vosotros</span><span>-éis</span></div>
+          <div class="conj-row"><span>ellos</span><span>-án</span></div>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h4>Irregular Stems</h4>
+        <div class="irregular-list">
+          <div class="irr-item"><span class="inf">decir</span><span class="arrow">→</span><span class="stem">dir-</span></div>
+          <div class="irr-item"><span class="inf">hacer</span><span class="arrow">→</span><span class="stem">har-</span></div>
+          <div class="irr-item"><span class="inf">poder</span><span class="arrow">→</span><span class="stem">podr-</span></div>
+          <div class="irr-item"><span class="inf">poner</span><span class="arrow">→</span><span class="stem">pondr-</span></div>
+          <div class="irr-item"><span class="inf">querer</span><span class="arrow">→</span><span class="stem">querr-</span></div>
+          <div class="irr-item"><span class="inf">saber</span><span class="arrow">→</span><span class="stem">sabr-</span></div>
+          <div class="irr-item"><span class="inf">salir</span><span class="arrow">→</span><span class="stem">saldr-</span></div>
+          <div class="irr-item"><span class="inf">tener</span><span class="arrow">→</span><span class="stem">tendr-</span></div>
+          <div class="irr-item"><span class="inf">venir</span><span class="arrow">→</span><span class="stem">vendr-</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="examples-block">
+      <h4>📝 Examples in Context</h4>
+      <div class="example-cards" id="future-examples">
+        <div class="ex-card" style="--ex-color:#4A90D9">
+          <div class="ex-sp">Álvaro y yo <strong>iremos</strong> a buscar trabajo pronto.</div>
+          <div class="ex-en">Álvaro and I <em>will go</em> look for work soon.</div>
+          <div class="ex-tag">ir → ir + emos</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#E87C5B">
+          <div class="ex-sp">El gerente <strong>contratará</strong> a tres nuevos empleados.</div>
+          <div class="ex-en">The manager <em>will hire</em> three new employees.</div>
+          <div class="ex-tag">contratar → contratar + á</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#4CAF80">
+          <div class="ex-sp">¿Cuándo <strong>recibirás</strong> el aumento de sueldo?</div>
+          <div class="ex-en">When <em>will you receive</em> the raise?</div>
+          <div class="ex-tag">recibir → recibir + ás</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#9B59B6">
+          <div class="ex-sp">Yo <strong>solicitaré</strong> el puesto de diseñadora mañana.</div>
+          <div class="ex-en">I <em>will apply for</em> the designer position tomorrow.</div>
+          <div class="ex-tag">solicitar → solicitar + é</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#F39C12">
+          <div class="ex-sp">Ellos <strong>tendrán</strong> una reunión de videoconferencia.</div>
+          <div class="ex-en">They <em>will have</em> a videoconference meeting.</div>
+          <div class="ex-tag">tener → tendr + án (irregular)</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#E91E8C">
+          <div class="ex-sp">La arquitecta <strong>hará</strong> los planos del edificio.</div>
+          <div class="ex-en">The architect <em>will make</em> the building plans.</div>
+          <div class="ex-tag">hacer → har + á (irregular)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future Tense MCQ -->
+    <div class="quiz-block" id="future-quiz">
+      <h3>Futuro Simple Quiz</h3>
+      <div id="future-q-container"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: FUTURE PERFECT ===== -->
+  <section id="future-perfect" class="section">
+    <div class="section-header">
+      <span class="section-tag" style="background:#D4EDDA;color:#155724">Gramática</span>
+      <h2>El Futuro Perfecto</h2>
+      <p>Expresses what <strong>will have happened</strong> by a certain point in the future.</p>
+    </div>
+
+    <div class="formula-box">
+      <div class="formula-part accent1">haber (future)</div>
+      <div class="formula-plus">+</div>
+      <div class="formula-part accent2">past participle</div>
+      <div class="formula-equals">=</div>
+      <div class="formula-result">Future Perfect</div>
+    </div>
+
+    <div class="grammar-grid">
+      <div class="grammar-card">
+        <h4>Haber in Future</h4>
+        <div class="conj-table">
+          <div class="conj-row header"><span>Person</span><span>Form</span></div>
+          <div class="conj-row"><span>yo</span><span>habré</span></div>
+          <div class="conj-row"><span>tú</span><span>habrás</span></div>
+          <div class="conj-row"><span>él/ella</span><span>habrá</span></div>
+          <div class="conj-row"><span>nosotros</span><span>habremos</span></div>
+          <div class="conj-row"><span>vosotros</span><span>habréis</span></div>
+          <div class="conj-row"><span>ellos</span><span>habrán</span></div>
+        </div>
+      </div>
+      <div class="grammar-card">
+        <h4>Key Time Phrases</h4>
+        <div class="phrase-list">
+          <div class="phrase-item"><span class="ph-es">para el lunes</span><span class="ph-en">by Monday</span></div>
+          <div class="phrase-item"><span class="ph-es">dentro de un año</span><span class="ph-en">within a year</span></div>
+          <div class="phrase-item"><span class="ph-es">para cuando llegues</span><span class="ph-en">by the time you arrive</span></div>
+          <div class="phrase-item"><span class="ph-es">antes de las cinco</span><span class="ph-en">before five o'clock</span></div>
+          <div class="phrase-item"><span class="ph-es">para el año 2030</span><span class="ph-en">by the year 2030</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="examples-block">
+      <h4>Examples in Context</h4>
+      <div class="example-cards">
+        <div class="ex-card" style="--ex-color:#2196A0">
+          <div class="ex-sp">Para el lunes, yo <strong>habré terminado</strong> el currículum.</div>
+          <div class="ex-en">By Monday, I <em>will have finished</em> the résumé.</div>
+          <div class="ex-tag">habré + terminado</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#C0392B">
+          <div class="ex-sp">Dentro de un año, ella <strong>habrá obtenido</strong> el ascenso.</div>
+          <div class="ex-en">Within a year, she <em>will have obtained</em> the promotion.</div>
+          <div class="ex-tag">habrá + obtenido</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#27AE60">
+          <div class="ex-sp">Para cuando llegues, nosotros <strong>habremos solicitado</strong> el empleo.</div>
+          <div class="ex-en">By the time you arrive, we <em>will have applied for</em> the job.</div>
+          <div class="ex-tag">habremos + solicitado</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#8E44AD">
+          <div class="ex-sp">¿Tú <strong>habrás renunciado</strong> antes del viernes?</div>
+          <div class="ex-en">Will you <em>have resigned</em> before Friday?</div>
+          <div class="ex-tag">habrás + renunciado</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#D35400">
+          <div class="ex-sp">Para el año 2030, los científicos <strong>habrán descubierto</strong> mucho.</div>
+          <div class="ex-en">By 2030, scientists <em>will have discovered</em> a lot.</div>
+          <div class="ex-tag">habrán + descubierto</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#1A5276">
+          <div class="ex-sp">El contador <strong>habrá invertido</strong> los fondos para mañana.</div>
+          <div class="ex-en">The accountant <em>will have invested</em> the funds by tomorrow.</div>
+          <div class="ex-tag">habrá + invertido</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future Perfect MCQ -->
+    <div class="quiz-block" id="future-perfect-quiz">
+      <h3>Futuro Perfecto Quiz</h3>
+      <div id="fp-q-container"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: PAST SUBJUNCTIVE ===== -->
+  <section id="past-subj" class="section alt-bg">
+    <div class="section-header">
+      <span class="section-tag" style="background:#F8D7DA;color:#721C24">🌀 Gramática</span>
+      <h2>El Imperfecto de Subjuntivo</h2>
+      <p>Used to express past states, conditions, wishes, doubt, or hypothetical situations.</p>
+    </div>
+
+    <div class="grammar-grid">
+      <div class="grammar-card">
+        <h4>Formation</h4>
+        <p>Take the <strong>ellos/pretérite</strong> form, drop <em>-ron</em>, add endings:</p>
+        <div class="conj-table">
+          <div class="conj-row header"><span>Person</span><span>Ending</span></div>
+          <div class="conj-row"><span>yo</span><span>-ra</span></div>
+          <div class="conj-row"><span>tú</span><span>-ras</span></div>
+          <div class="conj-row"><span>él/ella</span><span>-ra</span></div>
+          <div class="conj-row"><span>nosotros</span><span>-ramos</span></div>
+          <div class="conj-row"><span>vosotros</span><span>-rais</span></div>
+          <div class="conj-row"><span>ellos</span><span>-ran</span></div>
+        </div>
+      </div>
+      <div class="grammar-card">
+        <h4>Common Triggers</h4>
+        <div class="trigger-list">
+          <div class="trigger-item wish">
+            <span class="trigger-label">Wish / Hope</span>
+            <span class="trigger-ex">Quería que <em>trabajara</em></span>
+          </div>
+          <div class="trigger-item doubt">
+            <span class="trigger-label">Doubt / Denial</span>
+            <span class="trigger-ex">No creían que <em>tuviera</em></span>
+          </div>
+          <div class="trigger-item emotion">
+            <span class="trigger-label">Emotion</span>
+            <span class="trigger-ex">Me sorprendió que <em>renunciara</em></span>
+          </div>
+          <div class="trigger-item condition">
+            <span class="trigger-label">Condition (si)</span>
+            <span class="trigger-ex">Si <em>tuviera</em> dinero...</span>
+          </div>
+          <div class="trigger-item command">
+            <span class="trigger-label">Indirect Command</span>
+            <span class="trigger-ex">Le pedí que <em>firmara</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="examples-block">
+      <h4>Examples in Context</h4>
+      <div class="example-cards">
+        <div class="ex-card" style="--ex-color:#C0392B">
+          <div class="ex-sp">El jefe quería que yo <strong>llegara</strong> a tiempo a la entrevista.</div>
+          <div class="ex-en">The boss wanted me <em>to arrive</em> on time to the interview.</div>
+          <div class="ex-tag">llegar → llegaran → llegara</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#1A6B8A">
+          <div class="ex-sp">Me sorprendió que ella <strong>renunciara</strong> al puesto.</div>
+          <div class="ex-en">It surprised me that she <em>resigned</em> from the position.</div>
+          <div class="ex-tag">renunciar → renunciaran → renunciara</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#27AE60">
+          <div class="ex-sp">No creíamos que el científico <strong>tuviera</strong> tanto éxito.</div>
+          <div class="ex-en">We didn't believe the scientist <em>would have</em> so much success.</div>
+          <div class="ex-tag">tener → tuvieran → tuviera (irregular)</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#7D3C98">
+          <div class="ex-sp">Le pedí al contador que <strong>invirtiera</strong> los fondos.</div>
+          <div class="ex-en">I asked the accountant <em>to invest</em> the funds.</div>
+          <div class="ex-tag">invertir → invirtieran → invirtiera</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#D35400">
+          <div class="ex-sp">Si <strong>tuviera</strong> más experiencia, solicitaría el ascenso.</div>
+          <div class="ex-en">If I <em>had</em> more experience, I would apply for the promotion.</div>
+          <div class="ex-tag">Si + past subj. → conditional</div>
+        </div>
+        <div class="ex-card" style="--ex-color:#2E6B47">
+          <div class="ex-sp">Era importante que los aspirantes <strong>prepararan</strong> un buen currículum.</div>
+          <div class="ex-en">It was important for the applicants <em>to prepare</em> a good résumé.</div>
+          <div class="ex-tag">preparar → prepararan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Past Subj MCQ -->
+    <div class="quiz-block" id="past-subj-quiz">
+      <h3>Imperfecto de Subjuntivo Quiz</h3>
+      <div id="ps-q-container"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>EspañolHoy &mdash; Lección 7: El mundo del trabajo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
